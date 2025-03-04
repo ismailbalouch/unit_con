@@ -60,8 +60,8 @@ elif category == "Temperature":
       st.success(f"{value} {from_unit} = {result:.2f} {to_unit}")
 
 elif category == "Weight":
-    from_unit = st.selectbox("From",["Kilograms", "Grams", "Pounds", "Ounace"])
-    to_unit = st.selectbox("To",["Kilograms", "Grams", "Pounds", "Ounace"])
+    from_unit = st.selectbox("From",["Kilograms", "Grams", "Pounds", "Ounces"])
+    to_unit = st.selectbox("To",["Kilograms", "Grams", "Pounds", "Ounces"])
     value = st.number_input("Enter Value")
     if st.button("Convert"):
       result = Weight_convertor(from_unit,to_unit,value)
